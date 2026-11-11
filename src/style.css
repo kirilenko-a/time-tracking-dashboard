@@ -19,3 +19,55 @@
 
   --font-main: "Rubik", sans-serif;
 }
+
+@utility activity-card {
+  padding-top: 38px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -11px;
+    right: 17.5px;
+  }
+}
+
+@utility activity-card-info {
+  position: relative;
+  z-index: 1;
+  padding: 27.5px 24px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@utility flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@utility activity-card-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--color-white);
+}
+
+@utility activity-card-time {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 32px;
+  color: var(--color-white);
+}
+
+@utility activity-card-previous-week {
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--color-navy-200);
+}
