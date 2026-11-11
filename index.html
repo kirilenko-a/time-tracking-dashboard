@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="public/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,5 +14,38 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>Time tracking dashboard</title>
   </head>
-  <body></body>
+  <body class="bg-navy-950 font-main min-h-screen">
+    <div class="grid px-6">
+      <header>
+        <div class="bg-navy-900 rounded-[15px]">
+          <div
+            class="bg-purple-600 flex p-8 rounded-[15px] items-center justify-between"
+          >
+            <picture class="size-16">
+              <img
+                class="border-white border-3 rounded-full"
+                src="/images/image-jeremy.png"
+                alt="Profile user picture"
+              />
+            </picture>
+
+            <div class="flex flex-col gap-2">
+              <p class="text-navy-200 text-[15px] leading-4.5">Report for</p>
+              <p class="text-white text-[24px] leading-7 font-light">
+                Jeremy Robson
+              </p>
+            </div>
+          </div>
+
+          <ul
+            class="flex text-purple-500 py-6 px-5.25 justify-between text-[18px] leading-5.25"
+          >
+            <li>Daily</li>
+            <li>Weekly</li>
+            <li>Monthly</li>
+          </ul>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>
