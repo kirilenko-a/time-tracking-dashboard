@@ -47,27 +47,111 @@
         </div>
       </header>
 
-      <main class="grid">
+      <main class="grid gap-6">
         <section
-          class="bg-orange-300 pt-9.5 rounded-[15px] overflow-hidden relative before:absolute before:-top-3.5 before:right-3.5 before:content-[''] before:bg-[url('/images/icon-work.svg')] before:bg-no-repeat before:size-19.5 before:bg-contain"
+          class="bg-orange-300 before:bg-[url('/images/icon-work.svg')] activity-card"
         >
-          <div
-            class="bg-navy-900 rounded-[15px] px-6 py-[27.5px] z-1 relative flex gap-2 flex-col"
-          >
-            <div class="flex justify-between items-center">
-              <p class="text-white text-[18px] leading-5.25 font-medium">
-                Work
-              </p>
+          <div class="bg-navy-900 activity-card-info">
+            <div class="flex-container">
+              <p class="activity-card-title">Work</p>
               <picture>
                 <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
               </picture>
             </div>
 
-            <div class="flex justify-between items-center">
-              <p class="text-white text-[32px] leading-8 font-light">32hrs</p>
-              <p class="text-navy-200 text-[15px] leading-4.5">
-                Last Week - 36hrs
-              </p>
+            <div class="flex-container">
+              <p class="activity-card-time">32hrs</p>
+              <p class="activity-card-previous-week">Last Week - 36hrs</p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="bg-blue-300 before:bg-[url('/images/icon-play.svg')] activity-card"
+        >
+          <div class="bg-navy-900 activity-card-info">
+            <div class="flex-container">
+              <p class="activity-card-title">Play</p>
+              <picture>
+                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+              </picture>
+            </div>
+
+            <div class="flex-container">
+              <p class="activity-card-time">10hrs</p>
+              <p class="activity-card-previous-week">Last Week - 36hrs</p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="bg-pink-400 before:bg-[url('/images/icon-study.svg')] activity-card"
+        >
+          <div class="bg-navy-900 activity-card-info">
+            <div class="flex-container">
+              <p class="activity-card-title">Study</p>
+              <picture>
+                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+              </picture>
+            </div>
+
+            <div class="flex-container">
+              <p class="activity-card-time">4hrs</p>
+              <p class="activity-card-previous-week">Last Week - 7hrs</p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="bg-green-400 before:bg-[url('/images/icon-exercise.svg')] activity-card"
+        >
+          <div class="bg-navy-900 activity-card-info">
+            <div class="flex-container">
+              <p class="activity-card-title">Exercise</p>
+              <picture>
+                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+              </picture>
+            </div>
+
+            <div class="flex-container">
+              <p class="activity-card-time">4hrs</p>
+              <p class="activity-card-previous-week">Last Week - 5hrs</p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="bg-purple-700 before:bg-[url('/images/icon-social.svg')] activity-card"
+        >
+          <div class="bg-navy-900 activity-card-info">
+            <div class="flex-container">
+              <p class="activity-card-title">Social</p>
+              <picture>
+                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+              </picture>
+            </div>
+
+            <div class="flex-container">
+              <p class="activity-card-time">5hrs</p>
+              <p class="activity-card-previous-week">Last Week - 10hrs</p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="bg-yellow-300 before:bg-[url('/images/icon-self-care.svg')] activity-card"
+        >
+          <div class="bg-navy-900 activity-card-info">
+            <div class="flex-container">
+              <p class="activity-card-title">Self Care</p>
+              <picture>
+                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+              </picture>
+            </div>
+
+            <div class="flex-container">
+              <p class="activity-card-time">2hrs</p>
+              <p class="activity-card-previous-week">Last Week - 2hrs</p>
             </div>
           </div>
         </section>
