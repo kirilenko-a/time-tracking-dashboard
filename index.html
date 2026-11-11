@@ -15,8 +15,10 @@
     <title>Time tracking dashboard</title>
   </head>
   <body class="bg-navy-950 font-main min-h-screen">
-    <div class="grid px-6 gap-6">
-      <header>
+    <main
+      class="grid px-6 gap-6 py-20.25 md:grid-cols-3 md:px-19.5 xl:grid-cols-4 xl:grid-rows-2"
+    >
+      <aside class="md:col-span-3 xl:col-span-1 xl:row-span-2">
         <div class="bg-navy-900 rounded-[15px]">
           <div
             class="bg-purple-600 flex p-8 rounded-[15px] items-center justify-between"
@@ -45,117 +47,115 @@
             <li>Monthly</li>
           </ul>
         </div>
-      </header>
+      </aside>
 
-      <main class="grid gap-6">
-        <section
-          class="bg-orange-300 before:bg-[url('/images/icon-work.svg')] activity-card"
-        >
-          <div class="bg-navy-900 activity-card-info">
-            <div class="flex-container">
-              <p class="activity-card-title">Work</p>
-              <picture>
-                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-              </picture>
-            </div>
-
-            <div class="flex-container">
-              <p class="activity-card-time">32hrs</p>
-              <p class="activity-card-previous-week">Last Week - 36hrs</p>
-            </div>
+      <section
+        class="bg-orange-300 before:bg-[url('/images/icon-work.svg')] activity-card before:size-19.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <p class="activity-card-title">Work</p>
+            <picture>
+              <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </picture>
           </div>
-        </section>
 
-        <section
-          class="bg-blue-300 before:bg-[url('/images/icon-play.svg')] activity-card"
-        >
-          <div class="bg-navy-900 activity-card-info">
-            <div class="flex-container">
-              <p class="activity-card-title">Play</p>
-              <picture>
-                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-              </picture>
-            </div>
-
-            <div class="flex-container">
-              <p class="activity-card-time">10hrs</p>
-              <p class="activity-card-previous-week">Last Week - 36hrs</p>
-            </div>
+          <div class="flex-container md:flex-col md:items-start">
+            <p class="activity-card-time">32hrs</p>
+            <p class="activity-card-previous-week">Last Week - 36hrs</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section
-          class="bg-pink-400 before:bg-[url('/images/icon-study.svg')] activity-card"
-        >
-          <div class="bg-navy-900 activity-card-info">
-            <div class="flex-container">
-              <p class="activity-card-title">Study</p>
-              <picture>
-                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-              </picture>
-            </div>
-
-            <div class="flex-container">
-              <p class="activity-card-time">4hrs</p>
-              <p class="activity-card-previous-week">Last Week - 7hrs</p>
-            </div>
+      <section
+        class="bg-blue-300 before:bg-[url('/images/icon-play.svg')] activity-card before:size-22.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <p class="activity-card-title">Play</p>
+            <picture>
+              <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </picture>
           </div>
-        </section>
 
-        <section
-          class="bg-green-400 before:bg-[url('/images/icon-exercise.svg')] activity-card"
-        >
-          <div class="bg-navy-900 activity-card-info">
-            <div class="flex-container">
-              <p class="activity-card-title">Exercise</p>
-              <picture>
-                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-              </picture>
-            </div>
-
-            <div class="flex-container">
-              <p class="activity-card-time">4hrs</p>
-              <p class="activity-card-previous-week">Last Week - 5hrs</p>
-            </div>
+          <div class="flex-container md:flex-col md:items-start">
+            <p class="activity-card-time">10hrs</p>
+            <p class="activity-card-previous-week">Last Week - 36hrs</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section
-          class="bg-purple-700 before:bg-[url('/images/icon-social.svg')] activity-card"
-        >
-          <div class="bg-navy-900 activity-card-info">
-            <div class="flex-container">
-              <p class="activity-card-title">Social</p>
-              <picture>
-                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-              </picture>
-            </div>
-
-            <div class="flex-container">
-              <p class="activity-card-time">5hrs</p>
-              <p class="activity-card-previous-week">Last Week - 10hrs</p>
-            </div>
+      <section
+        class="bg-pink-400 before:bg-[url('/images/icon-study.svg')] activity-card before:size-19.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <p class="activity-card-title">Study</p>
+            <picture>
+              <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </picture>
           </div>
-        </section>
 
-        <section
-          class="bg-yellow-300 before:bg-[url('/images/icon-self-care.svg')] activity-card"
-        >
-          <div class="bg-navy-900 activity-card-info">
-            <div class="flex-container">
-              <p class="activity-card-title">Self Care</p>
-              <picture>
-                <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-              </picture>
-            </div>
-
-            <div class="flex-container">
-              <p class="activity-card-time">2hrs</p>
-              <p class="activity-card-previous-week">Last Week - 2hrs</p>
-            </div>
+          <div class="flex-container md:flex-col md:items-start">
+            <p class="activity-card-time">4hrs</p>
+            <p class="activity-card-previous-week">Last Week - 7hrs</p>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-green-400 before:bg-[url('/images/icon-exercise.svg')] activity-card before:w-19.75 before:h-13.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <p class="activity-card-title">Exercise</p>
+            <picture>
+              <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </picture>
+          </div>
+
+          <div class="flex-container md:flex-col md:items-start">
+            <p class="activity-card-time">4hrs</p>
+            <p class="activity-card-previous-week">Last Week - 5hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-purple-700 before:bg-[url('/images/icon-social.svg')] activity-card before:w-18.25 before:h-25"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <p class="activity-card-title">Social</p>
+            <picture>
+              <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </picture>
+          </div>
+
+          <div class="flex-container md:flex-col md:items-start">
+            <p class="activity-card-time">5hrs</p>
+            <p class="activity-card-previous-week">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-yellow-300 before:bg-[url('/images/icon-self-care.svg')] activity-card before:w-18 before:h-16.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <p class="activity-card-title">Self Care</p>
+            <picture>
+              <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </picture>
+          </div>
+
+          <div class="flex-container md:flex-col md:items-start">
+            <p class="activity-card-time">2hrs</p>
+            <p class="activity-card-previous-week">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
