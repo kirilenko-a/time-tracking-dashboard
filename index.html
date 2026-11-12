@@ -28,7 +28,7 @@
             <img
               class="border-white border-3 rounded-full size-16 md:size-19.5"
               src="/images/image-jeremy.png"
-              alt="Profile user picture"
+              alt="Jeremy Robson"
             />
 
             <div class="flex flex-col gap-2 xl:gap-0">
@@ -44,9 +44,33 @@
           <ul
             class="flex text-purple-500 p-6 justify-between text-[18px] leading-5.25 md:justify-center md:gap-16.25 xl:flex-col xl:gap-5.25 xl:py-7 xl:pl-8"
           >
-            <li><button class="filter-btn" data-="daily">Daily</button></li>
-            <li><button class="filter-btn" data-="weekly">Weekly</button></li>
-            <li><button class="filter-btn" data-="monthly">Monthly</button></li>
+            <li>
+              <button
+                class="filter-btn"
+                data-period="daily"
+                aria-pressed="false"
+              >
+                Daily
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-btn"
+                data-period="weekly"
+                aria-pressed="false"
+              >
+                Weekly
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-btn"
+                data-period="monthly"
+                aria-pressed="false"
+              >
+                Monthly
+              </button>
+            </li>
           </ul>
         </div>
       </aside>
@@ -56,9 +80,9 @@
       >
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
-            <p class="activity-card-title">Work</p>
+            <h2 class="activity-card-title">Work</h2>
 
-            <button class="edit-btn">
+            <button class="edit-btn" aria-label="More options for work">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
             </button>
           </div>
@@ -75,8 +99,8 @@
       >
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
-            <p class="activity-card-title">Play</p>
-            <button class="edit-btn">
+            <h2 class="activity-card-title">Play</h2>
+            <button class="edit-btn" aria-label="More options for work">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
             </button>
           </div>
@@ -93,8 +117,8 @@
       >
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
-            <p class="activity-card-title">Study</p>
-            <button class="edit-btn">
+            <h2 class="activity-card-title">Study</h2>
+            <button class="edit-btn" aria-label="More options for work">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
             </button>
           </div>
@@ -111,8 +135,8 @@
       >
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
-            <p class="activity-card-title">Exercise</p>
-            <button class="edit-btn">
+            <h2 class="activity-card-title">Exercise</h2>
+            <button class="edit-btn" aria-label="More options for work">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
             </button>
           </div>
@@ -129,8 +153,8 @@
       >
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
-            <p class="activity-card-title">Social</p>
-            <button class="edit-btn">
+            <h2 class="activity-card-title">Social</h2>
+            <button class="edit-btn" aria-label="More options for work">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
             </button>
           </div>
@@ -147,8 +171,8 @@
       >
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
-            <p class="activity-card-title">Self Care</p>
-            <button class="edit-btn">
+            <h2 class="activity-card-title">Self Care</h2>
+            <button class="edit-btn" aria-label="More options for work">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
             </button>
           </div>
