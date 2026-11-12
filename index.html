@@ -14,37 +14,39 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>Time tracking dashboard</title>
   </head>
-  <body class="bg-navy-950 font-main min-h-screen">
+  <body
+    class="bg-navy-950 font-main min-h-screen md:flex md:items-center md:justify-center"
+  >
     <main
-      class="grid px-6 gap-6 py-20.25 md:grid-cols-3 md:px-19.5 xl:grid-cols-4 xl:grid-rows-2"
+      class="grid px-6 gap-6 py-20.25 md:grid-cols-3 xl:grid-cols-4 xl:grid-rows-2 md:p-0 max-w-279"
     >
       <aside class="md:col-span-3 xl:col-span-1 xl:row-span-2">
         <div class="bg-navy-900 rounded-[15px]">
           <div
-            class="bg-purple-600 flex p-8 rounded-[15px] items-center justify-between md:justify-start md:gap-6 md:pt-8.5"
+            class="bg-purple-600 flex p-8 rounded-[15px] items-center justify-between md:justify-start md:gap-6 md:pt-8.5 xl:flex-col xl:items-start xl:pb-22.75 xl:gap-[28.5px]"
           >
-            <picture class="size-16">
-              <img
-                class="border-white border-3 rounded-full"
-                src="/images/image-jeremy.png"
-                alt="Profile user picture"
-              />
-            </picture>
+            <img
+              class="border-white border-3 rounded-full size-16 md:size-19.5"
+              src="/images/image-jeremy.png"
+              alt="Profile user picture"
+            />
 
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 xl:gap-0">
               <p class="text-navy-200 text-[15px] leading-4.5">Report for</p>
-              <h1 class="text-white text-[24px] leading-7 font-light">
+              <h1
+                class="text-white text-[24px] leading-7 font-light xl:text-[40px] xl:leading-11.75"
+              >
                 Jeremy Robson
               </h1>
             </div>
           </div>
 
           <ul
-            class="flex text-purple-500 p-6 justify-between text-[18px] leading-5.25 md:justify-center md:gap-16.25"
+            class="flex text-purple-500 p-6 justify-between text-[18px] leading-5.25 md:justify-center md:gap-16.25 xl:flex-col xl:gap-5.25 xl:py-7 xl:pl-8"
           >
-            <li>Daily</li>
-            <li>Weekly</li>
-            <li>Monthly</li>
+            <li><button class="filter-btn" data-="daily">Daily</button></li>
+            <li><button class="filter-btn" data-="weekly">Weekly</button></li>
+            <li><button class="filter-btn" data-="monthly">Monthly</button></li>
           </ul>
         </div>
       </aside>
@@ -55,12 +57,13 @@
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
             <p class="activity-card-title">Work</p>
-            <picture>
+
+            <button class="edit-btn">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </picture>
+            </button>
           </div>
 
-          <div class="flex-container md:flex-col md:items-start">
+          <div class="stats-flex-container">
             <p class="activity-card-time">32hrs</p>
             <p class="activity-card-previous-week">Last Week - 36hrs</p>
           </div>
@@ -73,12 +76,12 @@
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
             <p class="activity-card-title">Play</p>
-            <picture>
+            <button class="edit-btn">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </picture>
+            </button>
           </div>
 
-          <div class="flex-container md:flex-col md:items-start">
+          <div class="stats-flex-container">
             <p class="activity-card-time">10hrs</p>
             <p class="activity-card-previous-week">Last Week - 36hrs</p>
           </div>
@@ -91,12 +94,12 @@
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
             <p class="activity-card-title">Study</p>
-            <picture>
+            <button class="edit-btn">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </picture>
+            </button>
           </div>
 
-          <div class="flex-container md:flex-col md:items-start">
+          <div class="stats-flex-container">
             <p class="activity-card-time">4hrs</p>
             <p class="activity-card-previous-week">Last Week - 7hrs</p>
           </div>
@@ -109,12 +112,12 @@
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
             <p class="activity-card-title">Exercise</p>
-            <picture>
+            <button class="edit-btn">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </picture>
+            </button>
           </div>
 
-          <div class="flex-container md:flex-col md:items-start">
+          <div class="stats-flex-container">
             <p class="activity-card-time">4hrs</p>
             <p class="activity-card-previous-week">Last Week - 5hrs</p>
           </div>
@@ -127,12 +130,12 @@
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
             <p class="activity-card-title">Social</p>
-            <picture>
+            <button class="edit-btn">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </picture>
+            </button>
           </div>
 
-          <div class="flex-container md:flex-col md:items-start">
+          <div class="stats-flex-container">
             <p class="activity-card-time">5hrs</p>
             <p class="activity-card-previous-week">Last Week - 10hrs</p>
           </div>
@@ -145,12 +148,12 @@
         <div class="bg-navy-900 activity-card-info">
           <div class="flex-container">
             <p class="activity-card-title">Self Care</p>
-            <picture>
+            <button class="edit-btn">
               <img src="/images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </picture>
+            </button>
           </div>
 
-          <div class="flex-container md:flex-col md:items-start">
+          <div class="stats-flex-container">
             <p class="activity-card-time">2hrs</p>
             <p class="activity-card-previous-week">Last Week - 2hrs</p>
           </div>
