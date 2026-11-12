@@ -21,6 +21,8 @@
 }
 
 @utility activity-card {
+  display: flex;
+  flex-direction: column;
   padding-top: 38px;
   border-radius: 15px;
   overflow: hidden;
@@ -34,19 +36,37 @@
     top: -11px;
     right: 17.5px;
   }
+
+  @media (min-width: 768px) {
+    padding-top: 38px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 45px;
+  }
 }
 
 @utility activity-card-info {
   position: relative;
   z-index: 1;
   padding: 27.5px 24px;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
+
+  &:hover {
+    background-color: var(--color-navy-800);
+  }
 
   @media (min-width: 768px) {
     padding: 25.5px 21.5px;
+    gap: 16px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 33px 32.5px;
   }
 }
 
@@ -54,6 +74,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@utility stats-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
 }
 
 @utility activity-card-title {
@@ -79,4 +111,16 @@
   font-size: 15px;
   line-height: 18px;
   color: var(--color-navy-200);
+}
+
+@utility filter-btn {
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-white);
+  }
+}
+
+@utility edit-btn {
+  cursor: pointer;
 }
