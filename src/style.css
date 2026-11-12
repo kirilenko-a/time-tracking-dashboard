@@ -124,3 +124,7 @@
 @utility edit-btn {
   cursor: pointer;
 }
+
+@utility active-btn {
+  color: var(--color-white);
+}
