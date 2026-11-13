@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/time-tracking-dashboard/images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/src/main.js" defer></script>
+    <title>Time tracking dashboard</title>
+    <link rel="stylesheet" crossorigin href="/time-tracking-dashboard/assets/index-hPWjRzH_.css">
+  </head>
+  <body
+    class="bg-navy-950 font-main min-h-screen md:flex md:items-center md:justify-center"
+  >
+    <main
+      class="grid px-6 gap-6 py-20.25 md:grid-cols-3 xl:grid-cols-4 xl:grid-rows-2 md:p-0 xl:w-279 md:w-153"
+    >
+      <aside class="md:col-span-3 xl:col-span-1 xl:row-span-2">
+        <div class="bg-navy-900 rounded-[15px]">
+          <div
+            class="bg-purple-600 flex p-8 rounded-[15px] items-center justify-between md:justify-start md:gap-6 md:pt-8.5 xl:flex-col xl:items-start xl:pb-22.75 xl:gap-[28.5px]"
+          >
+            <img
+              class="border-white border-3 rounded-full size-16 md:size-19.5"
+              src="/time-tracking-dashboard/images/image-jeremy.png"
+              alt="Jeremy Robson"
+            />
+
+            <div class="flex flex-col gap-2 xl:gap-0">
+              <p class="text-navy-200 text-[15px] leading-4.5">Report for</p>
+              <h1
+                class="text-white text-[24px] leading-7 font-light xl:text-[40px] xl:leading-11.75"
+              >
+                Jeremy Robson
+              </h1>
+            </div>
+          </div>
+
+          <ul
+            class="flex text-purple-500 p-6 justify-between text-[18px] leading-5.25 md:justify-center md:gap-16.25 xl:flex-col xl:gap-5.25 xl:py-7 xl:pl-8"
+          >
+            <li>
+              <button
+                class="filter-btn"
+                data-period="daily"
+                aria-pressed="false"
+              >
+                Daily
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-btn active-btn"
+                data-period="weekly"
+                aria-pressed="true"
+              >
+                Weekly
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-btn"
+                data-period="monthly"
+                aria-pressed="false"
+              >
+                Monthly
+              </button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section
+        class="bg-orange-300 before:bg-[url('/images/icon-work.svg')] activity-card before:size-19.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <h2 class="activity-card-title">Work</h2>
+
+            <button class="edit-btn" aria-label="More options for work">
+              <img src="/time-tracking-dashboard/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </button>
+          </div>
+
+          <div class="stats-flex-container">
+            <p class="activity-card-time">32hrs</p>
+            <p class="activity-card-previous-week">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-blue-300 before:bg-[url('/images/icon-play.svg')] activity-card before:size-22.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <h2 class="activity-card-title">Play</h2>
+            <button class="edit-btn" aria-label="More options for work">
+              <img src="/time-tracking-dashboard/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </button>
+          </div>
+
+          <div class="stats-flex-container">
+            <p class="activity-card-time">10hrs</p>
+            <p class="activity-card-previous-week">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-pink-400 before:bg-[url('/images/icon-study.svg')] activity-card before:size-19.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <h2 class="activity-card-title">Study</h2>
+            <button class="edit-btn" aria-label="More options for work">
+              <img src="/time-tracking-dashboard/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </button>
+          </div>
+
+          <div class="stats-flex-container">
+            <p class="activity-card-time">4hrs</p>
+            <p class="activity-card-previous-week">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-green-400 before:bg-[url('/images/icon-exercise.svg')] activity-card before:w-19.75 before:h-13.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <h2 class="activity-card-title">Exercise</h2>
+            <button class="edit-btn" aria-label="More options for work">
+              <img src="/time-tracking-dashboard/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </button>
+          </div>
+
+          <div class="stats-flex-container">
+            <p class="activity-card-time">4hrs</p>
+            <p class="activity-card-previous-week">Last Week - 5hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-purple-700 before:bg-[url('/images/icon-social.svg')] activity-card before:w-18.25 before:h-25"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <h2 class="activity-card-title">Social</h2>
+            <button class="edit-btn" aria-label="More options for work">
+              <img src="/time-tracking-dashboard/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </button>
+          </div>
+
+          <div class="stats-flex-container">
+            <p class="activity-card-time">5hrs</p>
+            <p class="activity-card-previous-week">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-yellow-300 before:bg-[url('/images/icon-self-care.svg')] activity-card before:w-18 before:h-16.5"
+      >
+        <div class="bg-navy-900 activity-card-info">
+          <div class="flex-container">
+            <h2 class="activity-card-title">Self Care</h2>
+            <button class="edit-btn" aria-label="More options for work">
+              <img src="/time-tracking-dashboard/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </button>
+          </div>
+
+          <div class="stats-flex-container">
+            <p class="activity-card-time">2hrs</p>
+            <p class="activity-card-previous-week">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
