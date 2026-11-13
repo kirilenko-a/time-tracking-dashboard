@@ -4,36 +4,46 @@ const activitiesTime = document.querySelectorAll(".activity-card-time");
 const prevActivities = document.querySelectorAll(
   ".activity-card-previous-week",
 );
-const cardTitles = document.querySelectorAll(".activity-card-title");
-const dailyBtn = document.getElementById("daily");
-const weeklyBtn = document.getElementById("weekly");
-const monthlyBtn = document.getElementById("monthly");
 
 const getActivitiesData = async () => {
-  try {
-    const data = await fetch(url);
+  const data = await fetch(url);
 
-    const activities = await data.json();
-
-    return activities;
-  } catch (error) {
-    throw new Error(error);
+  if (!data.ok) {
+    throw new Error(data.status);
   }
+
+  const activities = await data.json();
+
+  return activities;
 };
 
 const showInfo = async (button) => {
-  const activitiesData = await getActivitiesData();
+  try {
+    const activitiesData = await getActivitiesData();
 
-  const current = activitiesData.map((activity) => {
-    return activity.timeframes[button].current;
-  });
+    activitiesData.forEach((activity, index) => {
+      const current = activity.timeframes[button].current;
+      const previous = activity.timeframes[button].previous;
 
-  const previus = activitiesData.map((activity) => {
-    return activity.timeframes[button].previous;
-  });
+      activitiesTime[index].textContent = `${current}hrs`;
+
+      switch (button) {
+        case "daily":
+          prevActivities[index].textContent = `Yesterday - ${previous}hrs`;
+          break;
+        case "weekly":
+          prevActivities[index].textContent = `Last Week - ${previous}hrs`;
+          break;
+        case "monthly":
+          prevActivities[index].textContent = `Last Month - ${previous}hrs`;
+      }
+    });
+  } catch (error) {
+    alert(error);
+  }
 };
 
-showInfo();
+showInfo("weekly");
 
 periodBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
