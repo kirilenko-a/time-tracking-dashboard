@@ -1,4 +1,4 @@
-const url = "/data.json";
+const url = `${import.meta.env.BASE_URL}data.json`;
 const periodBtns = document.querySelectorAll(".filter-btn");
 const activitiesTime = document.querySelectorAll(".activity-card-time");
 const prevActivities = document.querySelectorAll(
